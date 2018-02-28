@@ -1,0 +1,45 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  </head>
+  <body>
+    <div id="main-container">
+      <h1>
+        File metadata microservice
+      </h1>
+      <form method="post" action="/get-file-info" enctype="multipart/form-data">
+      Select any file and send it to get some info about it: <br>
+        <label for="file-input" class="custom-file-upload" title="select file"><i class="fas fa-upload"></i></label>
+        <input id="file-input" name="file" type="file">
+        <button type="submit" class="custom-file-upload" title="submit file">
+          <i class="fas fa-arrow-circle-right"></i>
+        </button>
+      </form>
+    </div>
+    <div id = "info-container">
+      <ol>
+        <span>User Stories:</span>
+        <li>I can submit a FormData object that includes a file upload.</li>
+        <li>When I submit something, I will receive the file size in bytes within the JSON response</li>
+      </ol>    
+    </div>
+  </body>  
+</html>
