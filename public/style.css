@@ -1,0 +1,54 @@
+body{
+  margin-top:10%;
+  font-family: 'Krona One', sans-serif;
+
+}
+
+h1{
+  font-size:35px;
+}
+
+#main-container{
+  width:50%;
+  background-color:#7eba35;
+  margin: 0 auto;
+  text-align:center;
+  border-radius:15px;
+  padding:20px;
+}
+
+#info-container{
+  width:50%;
+  border-radius:15px;
+  background-color:lightgray;
+  margin: 20px auto;
+  padding:20px;
+}
+
+#info-container span{
+  font-size:30px;
+}
+
+
+input[type="file"]{
+  display:none;
+}
+
+.custom-file-upload{
+  border:1px solid #ccc;
+  display:inline-block;
+  padding:6px 12px;
+  cursor:pointer;
+  border-radius:50%;
+  font-size:30px;
+  background-color:lightgray;
+  margin-top:15px;
+  box-shadow:0 6px black;
+  outline:none;
+  margin-left:15px;
+}
+
+.custom-file-upload:active{
+  transform:translate(0,5px);
+  box-shadow:none;
+}
